@@ -25,20 +25,20 @@
 
 准确预测主要组织相容性复合物I类（MHC-I）与多肽的结合能力，是提高新抗原鉴定效率的关键。相比亲和力实验，质谱技术鉴定的 MHC 结合多肽能更全面地反映细胞内自然呈递的抗原信息。此外，与传统实验方法相比，基于深度学习的计算预测方法可更快速、准确地完成该任务。
 
-本研究基于Transformer模型，利用质谱来源的数据进行建模，构建了一种新型多肽-MHC结合预测方法——**TransBindpMHC**。我们对其性能进行了全面评估：在训练中未见过的稀有MHC类型泛化数据集上，模型准确率达到 **0.9055**，初步验证了其泛化能力；在多批次、分布差异大的测试集以及大规模、多MHC类型的评估数据集中，TransBindpMHC在多种指标上表现优于或媲美六种主流算法；在实验验证的HPV及肿瘤新抗原数据集上，预测精度同样优异，尤其在新抗原数据集上的准确率高达 **0.932**。
+本研究基于Transformer模型，利用质谱来源的数据进行建模，构建了一种新型多肽-MHC结合预测方法——**TransBindpMHCI**。我们对其性能进行了全面评估：在训练中未见过的稀有MHC类型泛化数据集上，模型准确率达到 **0.9055**，初步验证了其泛化能力；在多批次、分布差异大的测试集以及大规模、多MHC类型的评估数据集中，TransBindpMHCI在多种指标上表现优于或媲美六种主流算法；在实验验证的HPV及肿瘤新抗原数据集上，预测精度同样优异，尤其在新抗原数据集上的准确率高达 **0.932**。
 
 为进一步探究模型在不同条件下的适用性，我们分析了其在不同多肽长度和MHC类型上的预测偏好，结果显示该方法在各种条件下均具备较强的预测能力。同时，为方便用户零代码使用，我们提供了一个可直接访问的在线平台：[https://xuhu-transbindpmhc.streamlit.app/](https://xuhu-transbindpmhc.streamlit.app/)
 
-综上所述，TransBindpMHC是一种泛MHC类型、支持多物种（目前支持人、小鼠）、适用于8–15个氨基酸长度的多肽序列、能够良好表征大多数中国人常见HLA分子类型的pMHC结合预测新方法。在多项评估任务中均表现出优异的预测性能与稳定性，具备良好的临床应用前景，为精准肿瘤免疫治疗提供了有力的计算工具。
+综上所述，TransBindpMHCI是一种泛MHC类型、支持多物种（目前支持人、小鼠）、适用于8–15个氨基酸长度的多肽序列、能够良好表征大多数中国人常见HLA分子类型的pMHC结合预测新方法。在多项评估任务中均表现出优异的预测性能与稳定性，具备良好的临床应用前景，为精准肿瘤免疫治疗提供了有力的计算工具。
 
 #### 架构
 
 <p align="center">
-  <img src="images/framework.jpeg" alt="TransBindpMHC_Framework" width="600"/>
+  <img src="images/framework.jpg" alt="TransBindpMHC_Framework" width="600"/>
 </p>
 
 <p align="center">
-  <img src="images/structure.png" alt="TransBindpMHC_structure" width="600"/>
+  <img src="images/structure.jpg" alt="TransBindpMHC_structure" width="600"/>
 </p>
 
 ## 克隆项目
