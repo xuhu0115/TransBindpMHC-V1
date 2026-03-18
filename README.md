@@ -34,11 +34,11 @@ In summary, TransBindpMHCI is a pan-MHC, cross-species (currently human and mous
 #### Architecture
 
 <p align="center">
-  <img src="images/framework.jpeg" alt="TransBindpMHC_Framework" width="600"/>
+  <img src="images/framework.jpg" alt="TransBindpMHC_Framework" width="600"/>
 </p>
 
 <p align="center">
-  <img src="images/structure.png" alt="TransBindpMHC_structure" width="600"/>
+  <img src="images/structure.jpg" alt="TransBindpMHC_structure" width="600"/>
 </p>
 
 ## Clone the Project
